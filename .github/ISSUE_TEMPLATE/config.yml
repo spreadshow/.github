@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Questions and ideas
-    url: https://github.com/orgs/spreadshow/discussions
+    url: https://github.com/spreadshow/spreadshow/discussions
     about: Ask questions and discuss ideas in Discussions.
   - name: Security vulnerability
     url: https://github.com/spreadshow/.github/blob/main/SECURITY.md
