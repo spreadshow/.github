@@ -1,0 +1,46 @@
+name: Bug report
+description: Something does not work as expected
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Connect to ...
+        2. Run query ...
+        3. See error ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Spreadshow version
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Data source involved
+      options:
+        - CSV / Parquet
+        - SQLite
+        - PostgreSQL / MySQL
+        - BigQuery / Snowflake
+        - Other / none
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Remove any credentials or sensitive data first.
+    validations:
+      required: false
